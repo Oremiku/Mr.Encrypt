@@ -28,33 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.decLine1 = new System.Windows.Forms.Panel();
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
+            this.ctlMainFrame1 = new ReservationApp.CommonControls.MainFrame.CtlMainFrame();
             this.SuspendLayout();
-            // 
-            // lblHeader
-            // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Instrument Sans", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(23, 24);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(135, 45);
-            this.lblHeader.TabIndex = 6;
-            this.lblHeader.Text = "ログイン";
-            // 
-            // decLine1
-            // 
-            this.decLine1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.decLine1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(90)))), ((int)(((byte)(200)))));
-            this.decLine1.Location = new System.Drawing.Point(31, 72);
-            this.decLine1.Name = "decLine1";
-            this.decLine1.Size = new System.Drawing.Size(782, 5);
-            this.decLine1.TabIndex = 7;
             // 
             // btnLogin
             // 
@@ -92,6 +70,16 @@
             this.lblPassword.TabIndex = 9;
             this.lblPassword.Text = "パスワード";
             // 
+            // ctlMainFrame1
+            // 
+            this.ctlMainFrame1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
+            this.ctlMainFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctlMainFrame1.HeaderTitle = "ログイン";
+            this.ctlMainFrame1.Location = new System.Drawing.Point(0, 0);
+            this.ctlMainFrame1.Name = "ctlMainFrame1";
+            this.ctlMainFrame1.Size = new System.Drawing.Size(830, 470);
+            this.ctlMainFrame1.TabIndex = 11;
+            // 
             // CtlLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -100,8 +88,7 @@
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.decLine1);
-            this.Controls.Add(this.lblHeader);
+            this.Controls.Add(this.ctlMainFrame1);
             this.Name = "CtlLogin";
             this.Size = new System.Drawing.Size(830, 470);
             this.ResumeLayout(false);
@@ -110,11 +97,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblHeader;
-        private System.Windows.Forms.Panel decLine1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
+        private CommonControls.MainFrame.CtlMainFrame ctlMainFrame1;
     }
 }
