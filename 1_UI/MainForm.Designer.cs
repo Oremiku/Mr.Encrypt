@@ -64,7 +64,7 @@
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(870, 540);
             this.Name = "MainForm";
-            this.Text = "ログイン";
+            this.Text = "暗号くん Mr.Encrypt";
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
