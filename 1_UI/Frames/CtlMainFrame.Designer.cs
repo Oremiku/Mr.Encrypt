@@ -1,4 +1,4 @@
-﻿namespace ReservationApp.CommonControls.MainFrame
+﻿namespace ReservationApp.UI
 {
     partial class CtlMainFrame
     {

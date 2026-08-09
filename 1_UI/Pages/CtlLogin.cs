@@ -13,7 +13,7 @@ namespace ReservationApp.UI
     /// <summary>
     /// ログイン画面
     /// </summary>
-    public partial class CtlLogin : UserControl
+    public partial class CtlLogin : CtlMainFrame
     {
         public CtlLogin()
         {

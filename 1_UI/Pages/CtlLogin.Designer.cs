@@ -31,7 +31,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.ctlMainFrame1 = new ReservationApp.CommonControls.MainFrame.CtlMainFrame();
+            this.ctlMainFrame1 = new ReservationApp.UI.CtlMainFrame();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -100,6 +100,6 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lblPassword;
-        private CommonControls.MainFrame.CtlMainFrame ctlMainFrame1;
+        private CtlMainFrame ctlMainFrame1;
     }
 }

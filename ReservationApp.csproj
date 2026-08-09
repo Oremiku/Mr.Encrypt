@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="1_UI\CtlLogin.cs">
+    <Compile Include="1_UI\Pages\CtlLogin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="1_UI\CtlLogin.Designer.cs">
+    <Compile Include="1_UI\Pages\CtlLogin.Designer.cs">
       <DependentUpon>CtlLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="1_UI\MainForm.cs">
@@ -59,20 +59,21 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="0_EntryPoint\Program.cs" />
-    <Compile Include="2_CommonControls\MainFrame\CtlMainFrame.cs">
+    <Compile Include="1_UI\NavigateParam.cs" />
+    <Compile Include="1_UI\Frames\CtlMainFrame.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="2_CommonControls\MainFrame\CtlMainFrame.Designer.cs">
+    <Compile Include="1_UI\Frames\CtlMainFrame.Designer.cs">
       <DependentUpon>CtlMainFrame.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="1_UI\CtlLogin.resx">
+    <EmbeddedResource Include="1_UI\Pages\CtlLogin.resx">
       <DependentUpon>CtlLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="1_UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="2_CommonControls\MainFrame\CtlMainFrame.resx">
+    <EmbeddedResource Include="1_UI\Frames\CtlMainFrame.resx">
       <DependentUpon>CtlMainFrame.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
