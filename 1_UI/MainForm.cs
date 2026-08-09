@@ -22,9 +22,33 @@ namespace ReservationApp.UI
         /// メインフォームをインスタンス化
         /// </summary>
         /// <param name="firstPage">一番最初に表示するページ名</param>
-        public MainForm()
+        public MainForm(NavigateParam param)
         {
             InitializeComponent();
+            this.NavigatePage(param);
+        }
+
+        /// <summary>
+        /// ページを遷移させます。
+        /// </summary>
+        /// <param name="param">遷移パラメータ</param>
+        private void NavigatePage(NavigateParam param)
+        {
+            this.NavigatePage(this, param);
+        }
+
+        /// <summary>
+        /// ページを遷移させます。
+        /// </summary>
+        private void NavigatePage(object sender, NavigateParam e)
+        {
+            var nextPage = e.NextPage;
+            nextPage.Dock = DockStyle.Fill;
+            nextPage.Param = e.Param;
+            nextPage.NavigateEvent += this.NavigatePage;
+
+            this.panel1.Controls.Clear();
+            this.panel1.Controls.Add(e.NextPage);
         }
     }
 }

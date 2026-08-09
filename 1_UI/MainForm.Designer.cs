@@ -50,6 +50,7 @@
             // 
             this.ctlLogin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(42)))), ((int)(((byte)(53)))));
             this.ctlLogin1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ctlLogin1.HeaderTitle = "";
             this.ctlLogin1.Location = new System.Drawing.Point(0, 0);
             this.ctlLogin1.Name = "ctlLogin1";
             this.ctlLogin1.Size = new System.Drawing.Size(826, 466);
