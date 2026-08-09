@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ReservationApp.CommonControls.MainFrame
+namespace ReservationApp.UI
 {
     /// <summary>
     /// メインの画面フレームです。
@@ -20,6 +20,11 @@ namespace ReservationApp.CommonControls.MainFrame
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// 画面遷移時のパラメータ
+        /// </summary>
+        public NavigateParam NavigateParam { get; set; }
 
         /// <summary>
         /// ヘッダに表示するタイトルを設定
