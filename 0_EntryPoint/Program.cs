@@ -17,7 +17,12 @@ namespace ReservationApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            var param = new NavigateParam()
+            {
+                NextPage = new CtlLogin(),
+                Param = null
+            };
+            Application.Run(new MainForm(param));
         }
     }
 }

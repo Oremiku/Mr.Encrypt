@@ -21,10 +21,9 @@ namespace ReservationApp.UI
             InitializeComponent();
         }
 
-        /// <summary>
-        /// 画面遷移時のパラメータ
-        /// </summary>
-        public NavigateParam NavigateParam { get; set; }
+        public event EventHandler<NavigateParam> NavigateEvent;
+
+        public object Param { protected get; set; }
 
         /// <summary>
         /// ヘッダに表示するタイトルを設定
@@ -42,6 +41,14 @@ namespace ReservationApp.UI
             {
                 this.lblTitle.Text = value;
             }
+        }
+
+        /// <summary>
+        /// ページ遷移イベントを発火させます。
+        /// </summary>
+        public void NavigatePage(object sender, NavigateParam e)
+        {
+            this.NavigateEvent?.Invoke(this, e);
         }
     }
 }

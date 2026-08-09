@@ -10,12 +10,12 @@ namespace ReservationApp.UI
     /// <summary>
     /// ページ遷移時のパラメータ
     /// </summary>
-    public class NavigateParam
+    public class NavigateParam : EventArgs
     {
         /// <summary>
         /// 遷移先のページ
         /// </summary>
-        public UserControl NextPage { get; set; }
+        public CtlMainFrame NextPage { get; set; }
 
         /// <summary>
         /// 任意のパラメータ
